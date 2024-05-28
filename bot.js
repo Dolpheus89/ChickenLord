@@ -63,7 +63,7 @@ bot.on(Events.InteractionCreate, async interaction => {
 bot.once(Events.ClientReady, readyBot => {
     console.log(`Ready! Logged in as ${readyBot.user.tag}`);
     updateServerInfo();
-    setInterval(updateServerInfo, 60000);
+    setInterval(updateServerInfo, 45000);
 });
 
 bot.login(process.env.BOT_TOKEN);
