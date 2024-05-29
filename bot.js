@@ -1,8 +1,17 @@
 import { Client, Events, Collection, GatewayIntentBits } from 'discord.js';
 import fs from 'node:fs';
 import path from 'node:path';
+import express from "express"
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import 'dotenv/config';
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => res.send('Bot is running!'));
+app.listen(PORT, () => {
+    console.log(`Web server is running on port ${PORT}`);
+});
 
 const bot = new Client({ intents: [GatewayIntentBits.Guilds] });
 
