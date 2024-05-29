@@ -62,32 +62,7 @@ bot.on(Events.InteractionCreate, async interaction => {
 
 bot.once(Events.ClientReady, readyBot => {
     console.log(`Ready! Logged in as ${readyBot.user.tag}`);
-    updateServerInfo();
-    setInterval(updateServerInfo, 45000);
 });
 
 bot.login(process.env.BOT_TOKEN);
 
-async function updateServerInfo() {
-    console.log('Updating server information...');
-    try {
-        for (const [guildId, guild] of bot.guilds.cache) {
-            const server = await bot.guilds.fetch(guildId);
-            const serverInfo = {
-                name: server.name,
-                memberCount: server.memberCount,
-                createdAt: server.createdAt.toLocaleDateString('fr-FR', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                }),
-                ownerId: server.ownerId,
-                bannerURL: server.bannerURL({ format: 'png', dynamic: true, size: 1024 })
-            };
-            serverInfoCache.set(guildId, serverInfo);
-        }
-        console.log('Server information updated successfully.');
-    } catch (error) {
-        console.error('Error updating server information:', error);
-    }
-}
