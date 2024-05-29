@@ -39,4 +39,4 @@ export const data = new SlashCommandBuilder()
     
         await interaction.reply({ embeds: [embed] });
 
-    }
+    } 
