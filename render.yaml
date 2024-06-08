@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: chickenlord
-    env: node
-    plan: free
-    buildCommand: 'npm install'
-    startCommand: './start.sh'

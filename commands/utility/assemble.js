@@ -1,13 +1,17 @@
 import { SlashCommandBuilder, EmbedBuilder, AttachmentBuilder } from 'discord.js';
 import path from 'path'
+import "dotenv/config"
 
 export const data = new SlashCommandBuilder()
     .setName('assemble')
     .setDescription('rassemblement des poulets');
 
+export const admin = true;    
+export const utile = true
+
 export const execute = async (interaction) => {
-    const roleName = "wilder";
-    const admin = "wildstaff"
+    const roleName = process.env.STUDENT_ROLE;
+    const admin = process.env.ADMIN_ROLE
     const categoryName = '▬┃WILDCODESCHOOL┃▬';
     const channelName = '┏📝┓ᴛᴀʙʟᴇᴀᴜ';  
 

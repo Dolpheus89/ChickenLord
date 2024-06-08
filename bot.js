@@ -48,7 +48,7 @@ for (const folder of commandFolders) {
 
 bot.on(Events.InteractionCreate, async interaction => {
     if (!interaction.isChatInputCommand()) return;
-    console.log(`User "${interaction.user.globalName}" used command "/${interaction.commandName}"`);
+    console.log(`${new Date().toLocaleString()} User "${interaction.user.globalName}" used command "/${interaction.commandName}"`);
 
     const command = interaction.client.commands.get(interaction.commandName);
 

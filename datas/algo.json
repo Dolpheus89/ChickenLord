@@ -1,0 +1,213 @@
+[
+    {
+        "id": 1,
+        "title": "Nombre d'œufs pondus par poule",
+        "description": "Écris une fonction qui calcule le nombre total d'œufs pondus par une poule sur une semaine. La fonction prend en entrée un tableau contenant le nombre d'œufs pondus chaque jour.",
+        "difficulty": 1,
+        "function": "const poulePondeuse = [10,15,1,8,6,7,5]\n\nconst nombreOeufsPondus = (parJour) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 2,
+        "title": "Vérifier si une année est bissextile",
+        "description": "Écris une fonction qui vérifie si une année est bissextile. Une année est bissextile si elle est divisible par 4, mais pas par 100, sauf si elle est aussi divisible par 400.",
+        "difficulty": 1,
+        "function": "const estBissextile = (annee) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 3,
+        "title": "Trouver le plus gros poulet",
+        "description": "Écris une fonction qui retourne le poids du plus gros poulet dans un tableau de poids.",
+        "difficulty": 1,
+        "function": "const grosPoulet = [5,10,2,8,99,3]\n\nconst plusGrosPoulet = (poidsPoulets) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 4,
+        "title": "Inverser un nom de poulet",
+        "description": "Écris une fonction qui inverse un nom de poulet (chaîne de caractères).",
+        "difficulty": 1,
+        "function": "const inverserNomPoulet = (nom) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 5,
+        "title": "Somme des œufs pondus",
+        "description": "Écris une fonction qui retourne la somme de tous les œufs pondus par un tableau de poules.",
+        "difficulty": 1,
+        "function": "const sommeOeufs = (poules) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 6,
+        "title": "Convertir des minutes en secondes",
+        "description": "Écris une fonction qui convertit un nombre donné de minutes en secondes.",
+        "difficulty": 1,
+        "function": "const minutesEnSecondes = (minutes) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 7,
+        "title": "Vérifier si un nombre est pair",
+        "description": "Écris une fonction qui vérifie si un nombre donné est pair.",
+        "difficulty": 1,
+        "function": "const estPair = (nombre) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 8,
+        "title": "Additionner deux nombres",
+        "description": "Écris une fonction qui additionne deux nombres et retourne le résultat.",
+        "difficulty": 1,
+        "function": "const additionner = (a, b) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 9,
+        "title": "Trouver l'œuf doré",
+        "description": "Écris une fonction qui vérifie si un tableau d'œufs (représenté par des nombres) contient un œuf doré (le nombre 7).",
+        "difficulty": 1,
+        "function": "const contientOeufDore = (oeufs) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 10,
+        "title": "Filtrer les poulets par poids minimum",
+        "description": "Écris une fonction qui prend un tableau de poids de poulets et un poids minimum, et retourne un nouveau tableau avec seulement les poulets qui pèsent plus que le poids minimum.",
+        "difficulty": 1,
+        "function": "const filtrerPoulets = (poidsPoulets, poidsMin) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 11,
+        "title": "Vérifier un œuf parfait",
+        "description": "Écris une fonction qui vérifie si le prénom d'un œuf (représenté par une chaîne de caractères) est parfait (palindrome).",
+        "difficulty": 2,
+        "function": "const estOeufParfait = (oeuf) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 12,
+        "title": "Tri des œufs par taille",
+        "description": "Écris une fonction qui trie un tableau de tailles d'œufs par ordre croissant.",
+        "difficulty": 2,
+        "function": "const triTailleOeufs = (tailleOeufs) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 13,
+        "title": "Recherche d'un poulet",
+        "description": "Écris une fonction qui cherche le nom d'un poulet dans un tableau de noms de poulets",
+        "difficulty": 2,
+        "function": "const recherchePoulet = (tab, poulet) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 14,
+        "title": "Calculer la moyenne des œufs pondus",
+        "description": "Écris une fonction qui calcule la moyenne des œufs pondus",
+        "difficulty": 2,
+        "function": "const oeufs = [145,45,15,458,15,15,45,70]\n\nconst moyenneOeufs = (poules) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 15,
+        "title": "Trouver le poulet le plus léger",
+        "description": "Écris une fonction qui retourne le poids du poulet le plus léger dans un tableau de poids.",
+        "difficulty": 2,
+        "function": "const plusLegerPoulet = (poidsPoulets) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 16,
+        "title": "Compter les poulets avec un certain poids",
+        "description": "Écris une fonction qui compte le nombre de poulets ayant un poids donné dans un tableau de poids.",
+        "difficulty": 2,
+        "function": "const compterPoulets = (poidsPoulets, poids) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 17,
+        "title": "Calculer la variance des poids des poulets",
+        "description": "Écris une fonction qui calcule la variance des poids des poulets dans un tableau.",
+        "difficulty": 2,
+        "function": "const variancePoidsPoulets = (poidsPoulets) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 18,
+        "title": "Compter les œufs pairs",
+        "description": "Écris une fonction qui compte le nombre d'œufs avec des tailles paires dans un tableau de tailles d'œufs.",
+        "difficulty": 2,
+        "function": "const compterOeufsPairs = (taillesOeufs) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 19,
+        "title": "Fusionner deux tableaux de poids de poulets",
+        "description": "Écris une fonction qui fusionne deux tableaux de poids de poulets en un seul.",
+        "difficulty": 2,
+        "function": "const fusionnerTableaux = (tab1, tab2) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 20,
+        "title": "Calculer le produit des tailles d'œufs",
+        "description": "Écris une fonction qui calcule le produit des tailles d'œufs dans un tableau.",
+        "difficulty": 2,
+        "function": "const produitTailleOeufs = (taillesOeufs) => {\n    // Votre code ici\n};"
+    },    
+    {
+        "id": 21,
+        "title": "Calculer la factorielle d'un nombre",
+        "description": "Écris une fonction qui calcule la factorielle d'un nombre donné.",
+        "difficulty": 3,
+        "function": "const factorielle = (n) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 22,
+        "title": "Trouver le plus grand diviseur commun",
+        "description": "Écris une fonction qui trouve le plus grand diviseur commun de deux nombres donnés.",
+        "difficulty": 3,
+        "function": "const pgcd = (a, b) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 23,
+        "title": "Générer une séquence de Fibonacci",
+        "description": "Écris une fonction qui génère les n premiers termes de la séquence de Fibonacci.",
+        "difficulty": 3,
+        "function": "const fibonacci = (n) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 24,
+        "title": "Trouver le plus petit nombre premier plus grand qu'un nombre donné",
+        "description": "Écris une fonction qui trouve le plus petit nombre premier plus grand qu'un nombre donné.",
+        "difficulty": 3,
+        "function": "const prochainPremier = (n) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 25,
+        "title": "Calculer la somme des chiffres d'un nombre",
+        "description": "Écris une fonction qui calcule la somme des chiffres d'un nombre donné.",
+        "difficulty": 3,
+        "function": "const sommeChiffres = (n) => {\n    // Votre code ici\n};\n\nPar exemple, si vous appelez sommeChiffres(123), cela devrait retourner 6, car la somme des chiffres de 123 est 1 + 2 + 3 = 6."
+    },
+    {
+        "id": 26,
+        "title": "Vérifier si un nombre est un nombre premier",
+        "description": "Écris une fonction qui vérifie si un nombre donné est un nombre premier.",
+        "difficulty": 3,
+        "function": "const estPremier = (n) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 27,
+        "title": "Calculer la puissance d'un nombre",
+        "description": "Écris une fonction qui calcule la puissance d'un nombre donné avec un exposant donné.",
+        "difficulty": 3,
+        "function": "const puissance = (base, exposant) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 28,
+        "title": "Vérifier si un nombre est parfait",
+        "description": "Écris une fonction qui vérifie si un nombre donné est parfait (la somme de ses diviseurs propres est égale au nombre lui-même).",
+        "difficulty": 3,
+        "function": "const estParfait = (n) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 29,
+        "title": "Générer des nombres premiers jusqu'à un certain nombre",
+        "description": "Écris une fonction qui génère tous les nombres premiers jusqu'à un nombre donné.",
+        "difficulty": 3,
+        "function": "const premiersJusqua = (n) => {\n    // Votre code ici\n};"
+    },
+    {
+        "id": 30,
+        "title": "Calculer le nombre de façons de monter un escalier",
+        "description": "Écris une fonction qui calcule le nombre de façons de monter un escalier de n marches, sachant qu'on peut avancer de 1 ou 2 marches à la fois.",
+        "difficulty": 3,
+        "function": "const escalier = (n) => {\n    // Votre code ici\n};"
+    }
+]
+

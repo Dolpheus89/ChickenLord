@@ -57,8 +57,9 @@ const funFactsAboutChickens = [
 
 export const data = new SlashCommandBuilder()
 .setName('chickenfact')
-.setDescription('Fournit un fait amusant sur les poulets.')
+.setDescription('Fournit un fait sur les poulets...')
 
+export const autre = true
 
 export const execute = async (interaction) => {
     const randomFact = funFactsAboutChickens[Math.floor(Math.random() * funFactsAboutChickens.length)];

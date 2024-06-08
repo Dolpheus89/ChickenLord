@@ -50,6 +50,7 @@ const chickenIpsumWords = [
           .setRequired(true)
       );
 
+      export const autre = true
 
       export const execute = async (interaction) => {
         const wordCount = interaction.options.getInteger('nb');

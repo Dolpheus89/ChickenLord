@@ -1,4 +1,5 @@
 import { SlashCommandBuilder, EmbedBuilder } from 'discord.js';
+import "dotenv/config"
 
 export const data = new SlashCommandBuilder()
     .setName('alert')
@@ -9,9 +10,12 @@ export const data = new SlashCommandBuilder()
           .setRequired(true)
       );
 
+export const admin = true;
+export const utile = true
+
 export const execute = async (interaction) => {
-    const roleName = "wilder";
-    const admin = "wildstaff"
+    const roleName = process.env.STUDENT_ROLE;
+    const admin = process.env.ADMIN_ROLE
     const categoryName = '▬┃WILDCODESCHOOL┃▬';
     const channelName = '┏📝┓ᴛᴀʙʟᴇᴀᴜ';  
 

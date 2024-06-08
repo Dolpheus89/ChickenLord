@@ -2,12 +2,14 @@ import { SlashCommandBuilder, EmbedBuilder } from 'discord.js';
 
 export const data = new SlashCommandBuilder()
     .setName(`user`)
-    .setDescription(`Provides information about the user.`)
+    .setDescription(`Fournit des informations sur un utilisateur.`)
     .addUserOption(option => 
         option.setName("target")
         .setDescription("user infos")
         .setRequired(true)
     )
+
+export const infos = true
 
     export const execute = async (interaction) => {
         const targetUser = interaction.options.getUser(`target`);

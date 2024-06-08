@@ -1,15 +1,19 @@
 import { SlashCommandBuilder } from 'discord.js';
+import "dotenv/config"
 
 export const data = new SlashCommandBuilder()
     .setName('solo')
     .setDescription('Déplace les utilisateurs seuls dans un canal vocal');
+
+export const admin = true;  
+export const moderation = true
 
 export const execute = async (interaction) => {
     await interaction.deferReply({ ephemeral: true });
     const guild = interaction.guild;
     await guild.channels.fetch();
 
-    const admin = "wildstaff"
+    const admin = process.env.ADMIN_ROLE
 
     let voiceChannels = guild.channels.cache.filter(channel => channel.type === 2);
     let movedMembers = 0;

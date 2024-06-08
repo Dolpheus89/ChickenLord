@@ -4,18 +4,20 @@ export const data = new SlashCommandBuilder()
     .setName('server')
     .setDescription('Fournit des informations sur le serveur.');
 
+
+export const infos = true
+
 export const execute = async (interaction) => {
     try {
         const server = interaction.guild;
 
-        // Calculer la date de création du serveur
+
         const createdAt = server.createdAt.toLocaleDateString('fr-FR', {
             year: 'numeric',
             month: 'long',
             day: 'numeric',
         });
 
-        // Vérifier le statut de la bannière
         const bannerURL = server.bannerURL({ format: 'png', dynamic: true, size: 1024 });
         let bannerStatus;
         if (bannerURL) {
