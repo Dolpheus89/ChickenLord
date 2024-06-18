@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import express from "express"
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import loadAutoSpeak from './events/AutoSpeak.js';
 import 'dotenv/config';
 
 const app = express();
@@ -72,6 +73,8 @@ bot.on(Events.InteractionCreate, async interaction => {
 bot.once(Events.ClientReady, readyBot => {
     console.log(`Ready! Logged in as ${readyBot.user.tag}`);
 });
+
+loadAutoSpeak(bot);
 
 bot.login(process.env.BOT_TOKEN);
 

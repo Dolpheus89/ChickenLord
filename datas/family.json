@@ -1,0 +1,54 @@
+{
+    "family_members": [
+      {
+        "name": "Antony",
+        "description": "Antony, le roi du poulailler, célèbre pour ses courses effrénées après les grains de maïs.",
+        "image_url": "../../public/family/antony.png"
+      },
+      {
+        "name": "Aurélia",
+        "description": "Aurélia, la technicienne du poulailler, toujours à bricoler des gadgets pour améliorer le confort des poules.",
+        "image_url": "../../public/family/Aurelia.png"
+      },
+      {
+        "name": "Landry",
+        "description": "Landry, l'inventeur du premier poulailler intelligent. Maintenant, même les poules ont du WiFi.",
+        "image_url": "../../public/family/Landry.png"
+      },
+      {
+        "name": "Marc",
+        "description": "Marc, le poulet le plus cool du coin, connu pour ses lunettes de soleil et son attitude détendue.",
+        "image_url": "../../public/family/marc.png"
+      },
+      {
+        "name": "Mathieu",
+        "description": "Mathieu, le poulet aventurier, toujours à la recherche de nouveaux horizons à explorer... ou de nouvelles graines à picorer.",
+        "image_url": "../../public/family/Mathieu.png"
+      },
+      {
+        "name": "Perrine",
+        "description": "Perrine, la stratège du poulailler, toujours en train de planifier la meilleure route pour s'évader du poulailler.",
+        "image_url": "../../public/family/Perrine.png"
+      },
+      {
+        "name": "Rémi",
+        "description": "Rémi, le scientifique fou, toujours en train de mener des expériences farfelues avec des œufs.",
+        "image_url": "../../public/family/remi.png"
+      },
+      {
+        "name": "Romain",
+        "description": "Romain, l'athlète du groupe, capable de faire des marathons en battant des ailes. Jamais essoufflé!",
+        "image_url": "../../public/family/Romain.png"
+      },
+      {
+        "name": "Sandrine",
+        "description": "Sandrine, la chef cuistot, réputée pour ses recettes secrètes de grains épicés.",
+        "image_url": "../../public/family/Sandrine.png"
+      },
+      {
+        "name": "Sébastien",
+        "description": "Sébastien, le musicien du poulailler, il peut jouer des symphonies entières en caquetant.",
+        "image_url": "../../public/family/Sebastien.png"
+      }
+    ]
+  }

@@ -6,6 +6,7 @@ export const data = new SlashCommandBuilder()
     .setDescription('Liste toutes les commandes disponibles exclusif aux admins.');
 
 export const infos = true
+export const admin = true
 
 export const execute = async (interaction) => {
     const commandList = interaction.client.commands.filter(command => command.admin)
