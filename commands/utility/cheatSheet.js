@@ -15,25 +15,25 @@ export const data = new SlashCommandBuilder()
       .setRequired(true)
       .setChoices({
         name:"FlexBox",
-        value:1
+        value:0
       },{
         name:"Git",
-        value:2
+        value:1
       },{
         name:"MediaQueries",
-        value:3
+        value:2
       }
       ,{
         name:"MethodeJS",
-        value:4
+        value:3
       }
       ,{
         name:"PouleRequest",
-        value:5
+        value:4
       }
       ,{
         name:"Terminal",
-        value:6
+        value:5
       }
 
     ))
@@ -41,7 +41,7 @@ export const data = new SlashCommandBuilder()
     export const execute = async (interaction) => {
 
         const technoNB = interaction.options.getInteger('technologie');
-        const techno = cheatSheetData.technologies[technoNB + 1]
+        const techno = cheatSheetData.technologies[technoNB]
     
         const imagePath = fs.readFileSync(`./public/cheat-sheet/${techno.image_url}`);
         const attachment = new AttachmentBuilder(imagePath);
