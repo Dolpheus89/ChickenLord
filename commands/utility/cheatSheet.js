@@ -41,7 +41,7 @@ export const data = new SlashCommandBuilder()
     export const execute = async (interaction) => {
 
         const technoNB = interaction.options.getInteger('technologie');
-        const techno = cheatSheetData.technologies[technoNB]
+        const techno = cheatSheetData.technologies[technoNB + 1]
     
         const imagePath = fs.readFileSync(`./public/cheat-sheet/${techno.image_url}`);
         const attachment = new AttachmentBuilder(imagePath);
