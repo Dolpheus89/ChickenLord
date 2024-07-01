@@ -24,15 +24,15 @@ export const data = new SlashCommandBuilder()
         value:3
       }
       ,{
-        name:"PouleRequest",
+        name:"MethodeJS",
         value:4
       }
       ,{
-        name:"Terminal",
+        name:"PouleRequest",
         value:5
       }
       ,{
-        name:"MethodeJS",
+        name:"Terminal",
         value:6
       }
 
