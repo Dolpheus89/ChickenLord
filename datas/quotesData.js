@@ -50,7 +50,5 @@ const quotes = [
     "Les plus belles histoires sont écrites par ceux qui osent sortir du poulailler."
 ];
 
-console.log(quotes);
-
 
 export default quotes

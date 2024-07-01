@@ -1,0 +1,34 @@
+{
+    "technologies": [
+      {
+        "id": 1,
+        "name": "les FlexBox",
+        "image_url": "../../public/cheat-sheet/flexbox.png"
+      },
+      {
+        "id": 2,
+        "name": "Git",
+        "image_url": "../../public/cheat-sheet/git.png"
+      },
+      {
+        "id": 3,
+        "name": " les Media Queries",
+        "image_url": "../../public/cheat-sheet/mediaqueries.png"
+      },
+      {
+        "id": 4,
+        "name": "les methodes Javascript",
+        "image_url": "../../public/cheat-sheet/methodeJS.jpg"
+      },
+      {
+        "id": 5,
+        "name": "une belle poule request 🐔",
+        "image_url": "../../public/cheat-sheet/PouleRquest.gif"
+      },
+      {
+        "id": 6,
+        "name": "le Terminal",
+        "image_url": "../../public/cheat-sheet/Terminal.png"
+      }
+    ]
+  }
