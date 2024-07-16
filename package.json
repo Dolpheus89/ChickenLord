@@ -10,9 +10,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "discord.js": "^14.15.2",
+    "@discordjs/voice": "^0.17.0",
+    "discord.js": "^14.15.3",
     "dotenv": "^16.4.5",
-    "env": "^0.0.2",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "libsodium-wrappers": "^0.7.14",
+    "opusscript": "^0.0.8"
   }
 }
