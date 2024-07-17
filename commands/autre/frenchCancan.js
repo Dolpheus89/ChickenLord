@@ -5,19 +5,20 @@ import {
   createAudioResource,
   StreamType,
 } from "@discordjs/voice";
-import { createReadStream } from "fs";
-import { fileURLToPath } from "node:url";
-import path from "node:path";
+import path from "path";
+import { fileURLToPath } from "url";
+import ffmpegStatic from "ffmpeg-static";
+import { spawn } from "child_process";
+
+export const autre = true;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const audioFilePath = path.resolve(
   __dirname,
-  "..",
-  "..",
-  "public",
-  "FrenchCancan.wav"
+  "../../public",
+  "FrenchCancan.mp3"
 );
 
 export const data = new SlashCommandBuilder()
@@ -33,9 +34,21 @@ export const execute = async (interaction) => {
     });
 
     try {
-      const stream = createReadStream(audioFilePath);
-      const resource = createAudioResource(stream, {
+      const stream = spawn(ffmpegStatic, [
+        "-i",
+        audioFilePath,
+        "-f",
+        "s16le",
+        "-ar",
+        "48000",
+        "-ac",
+        "2",
+        "pipe:1",
+      ]);
+
+      const resource = createAudioResource(stream.stdout, {
         inputType: StreamType.Raw,
+        inlineVolume: true,
       });
       const player = createAudioPlayer();
 
